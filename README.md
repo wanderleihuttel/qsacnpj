@@ -149,7 +149,7 @@ setwd("D:/qsa_cnpj")
 # que foram baixados e descompactados do site da Receita Federal. O diretório deve conter apenas os arquivos
 # da Receita Federal que serão tratados)
 
-# Sugestão 1: Tratar toda a base do CNPJ, 100.000 linha a cada interação,
+# Sugestão 1: Tratar toda a base do CNPJ, 100.000 linhas a cada iteração,
 # armazenando os dados no SQLite
 qsacnpj::gerar_bd_cnpj(path_arquivos_txt = "D:/qsa_cnpj",
                        localizar_cnpj = "NAO",
@@ -157,7 +157,7 @@ qsacnpj::gerar_bd_cnpj(path_arquivos_txt = "D:/qsa_cnpj",
                        armazenar = "sqlite")
 
 
-# Sugestão 2: Tratar toda a base do CNPJ, 100.000 linha a cada interação,
+# Sugestão 2: Tratar toda a base do CNPJ, 100.000 linhas a cada iteração,
 # armazenando os dados no CSV (OBS: O delimitador do CSV é o simbolo: "#').
 qsacnpj::gerar_bd_cnpj(path_arquivos_txt = "D:/qsa_cnpj",
                        localizar_cnpj = "NAO",
@@ -165,7 +165,7 @@ qsacnpj::gerar_bd_cnpj(path_arquivos_txt = "D:/qsa_cnpj",
                        armazenar = "csv")
 
 
-# Sugestão 3: Localziar um conjunto de CNPJ, interando a base a cada 100.000 linha,
+# Sugestão 3: Localizar um conjunto de CNPJ, iterando a base a cada 100.000 linhas,
 # armazenando os dados localizados no SQLite
 # (OBS1: O delimitador do CSV é o simbolo: "#');
 # (OBS2: Exemplo com número de CNPJ, entre aspas (""), do Banco do Brasil, Banco do Nordeste,
@@ -177,7 +177,7 @@ qsacnpj::gerar_bd_cnpj(path_arquivos_txt = "D:/qsa_cnpj",
                        armazenar = "sqlite")
 
 
-# Sugestão 4: Localziar um conjunto de CNPJ, interando a base a cada 100.000 linha,
+# Sugestão 4: Localizar um conjunto de CNPJ, iterando a base a cada 100.000 linhas,
 # armazenando os dados localizados no CSV
 # (OBS1: O delimitador do CSV é o simbolo: "#');
 # (OBS2: Exemplo com número de CNPJ, entre aspas (""), do Banco do Brasil, Banco do Nordeste,
